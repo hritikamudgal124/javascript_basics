@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //average of an array of numbers
+        const arr1 = [1,4,2,3];
+        const avg = (arr1) =>{
+            const sum = arr1.reduce((total,number)=>total+number);
+            return sum/arr1.length;
+        }
+        console.log(avg(arr1));
+    </script>
+</body>
+</html>

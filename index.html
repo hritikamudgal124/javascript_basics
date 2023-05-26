@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)function to get sum of two numbers(with arrow function)
+        // const getSum = (n1,n2) =>{
+        //     return n1+n2;
+        // }
+        // const sum = getSum(20,4);
+        // document.write(sum);
+
+        // with function
+        // function getSum(n1,n2){
+        //     return n1+n2;
+        // }
+        // const plus = getSum(16,9);
+        // document.write(plus);
+
+        // 2)function to return the length of an array
+        // const getLength = (arr) =>{
+        //     return arr.length;
+        // }
+        // document.write(getLength("hritika"));
+        
+        // // 3)reverse a string
+        // const rev = (str) =>{
+        //     return str.split("").reverse().join("");
+        // }
+        // document.write("<br>");
+        // document.write(rev("my name is hritika"))
+        
+        // 4)reverse the order of words in a string
+        const str2 = "my name is hritika";
+        const revOrder = (str2) =>{
+            return str2.split(' ').reverse().join(' ');
+        }
+        console.log(revOrder(str2));
+
+        // //5) count the number of words in a sentence
+        // const countWords = (sentence) =>{
+        //     return sentence.split(' ').length;
+        // }
+        // document.write(countWords("my name is hitika"));
+        
+        // //number of letters
+        // const coutWords = (sentence) =>{
+        //     return sentence.split('').length;
+        // }
+        // document.write("<br>");
+        // document.write(coutWords("my name is hitika"));
+        
+        //4)largest number in a string
+        //const arr = Math.max(1,4,2,3);
+        //document.write(arr);
+
+        //5)capitalize all strings in array
+        // const arr = ["hritika","shivani"];
+        // const arrCap = (arr) =>{
+        //     return arr.map(str => str.toUpperCase());
+        // }
+        // const capital = arrCap(arr);
+        // console.log(capital);
+
+        // //6) even
+        // const num = 4
+        // const eve = (num) =>{
+        //     return num%2 == 0;
+        // }
+        // const even = eve(num);
+        // console.log(even);
+
+        //7) filter even array
+        // const num = [1,3,4,2,8,5];
+        // const eve = (num) =>{
+        //     return num.filter(arr => arr%2===0);
+        // }
+        // const evens = eve(num);
+        // console.log(evens);
+
+        // //8) palindrome
+        // const str1 = "fix";
+        // const rev = (str1) =>{
+        //     const reversedstr = str1.split('').reverse().join('');
+        //     return str1 === reversedstr;
+        // }
+        // console.log(rev(str1));
+
+        // //10)longest string in an array
+        // const arr = ["sneha","saloni","aachal","hritika","sanjeevani"];
+        // const getLong = (arr) =>{
+        //     return arr.reduce((longest, current) => {
+        //         return current.length > longest.length ? current:longest;
+        //     },'');
+        // }
+        // console.log(getLong(arr));
+
+        //11)factorial
+        // const num = 3;
+        // const calculatefact = (num) =>{
+        // if(num == 0 || num == 1){
+        //     return 1;
+        // }
+        //     return num * calculatefact(num-1);
+        // }    
+        // console.log(calculatefact(num));
+    
+        // //12)sum of numbers in an array
+        // const arr = [3,2,3,4,5];
+        // const sum = (arr) =>{
+        //     return arr.reduce((sum,number)=>sum+number);
+        // }
+        // console.log(sum(arr));
+
+        //13)string contains only digit
+        // const str = "15";
+        // const onlyDigit = (str) =>{
+        //     return /^\d+$/.test(str)
+        // }
+        // console.log(onlyDigit(str));
+
+        // common elements in 2 arrays
+        // const arr1 = [1,2,3,4,6,7,8];
+        // const arr2 = [1,3,2,5,9,7];
+        // const common = (arr1,arr2)=>{
+        //     return arr1.filter(element=>arr2.includes(element));
+        // }
+        // console.log(common(arr1,arr2));
+
+        //no odd or even
+        // const num = 13;
+        // const oddEven = (num) =>{
+        //     if(num%2=== 0){
+        //         return ("even");
+        //     }else{
+        //         return ("odd");
+        //     }
+        // }
+        // console.log(oddEven(num));
+
+        // //leap year
+        // const year = 2020;
+        // const leapYear = (year) =>{
+        //     if(year%400==0 && year%100!=0 || year%4==0){
+        //         return ("leap year");
+        //     }
+        //     else{
+        //         return("not a leap year");
+        //     }
+        // }
+        // console.log(leapYear(year));
+
+        // //second largest
+        // const arr = [4,5,2,7,9,10,11,3];
+        // var a,b;
+        // const secLarge = (arr) =>{
+        //     const sorted = arr.sort((a,b) => b-a); //decending
+        //     return(sorted[1]);
+        // }
+        // console.log(secLarge(arr));
+
+        // //array of no in ascending order
+        // const arry = [4,2,6,7,12,34,1];
+        // const asc = (arry) =>{
+        //     return arry.sort((a,b)=>a-b);
+        // }
+        // console.log(asc(arry));
+
+        // //celsius to fahrenheit
+        // const celsius = 36;
+        // const celToFah = (celsius) =>{
+        //     return (celsius * 9/5)+32;
+        // }
+        // console.log(celToFah(celsius));
+
+        // //duplicate values in the array
+        // const arr1 = [1,3,2,3,2,4,4];
+        // const removeDuplicate = (arr1) =>{
+        //     return arr1.filter((item, index) => arr1.indexOf(item) === index);
+        // }
+        // console.log(removeDuplicate(arr1));
+
+        
+        
+
+        
+   </script>
+</body>
+</html>
